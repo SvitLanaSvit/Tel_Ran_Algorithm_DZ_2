@@ -5,7 +5,7 @@ public class Main {
         System.out.println(binarySearch(arr, key, 0, arr.length - 1));
 
         System.out.println();
-        int count = 3;
+        int count = 2;
         moveRing('A', 'B', 'C', count);
     }
 
@@ -39,7 +39,7 @@ public class Main {
 //    конец процедуры "Перенести";
 
     public static void moveRing(char a, char b, char c, int count) {
-
+        if(count == 0) return;
         if (count == 1) {
             System.out.println(String.format("from %s to %s", a, b));
         } else {
